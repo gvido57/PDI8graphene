@@ -2,6 +2,9 @@
 
 \usepackage[latin9]{inputenc}
 \usepackage{graphicx}
+\usepackage{color}
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{TODO}:#1}}
+
 \begin{document}
 \title{Molecular alignment on graphene surface determines tansport properties of graphene/organic semiconductor transistors}
 
@@ -185,10 +188,10 @@ The understanding of morphological properties of the OS layer and its growth mod
   In organic semiconductors charge transport proceeds by hopping in a manifold of localized molecular electronic states and is thus strongly dependent on the relative orientation of the molecules and the degree of positional disorder in the layers.
   On graphene instead, charge transport is characterized by Bloch-like extended states, which reside, in the case of a single-layer graphene in a relatively disorder-free environment.
   The effect of PDI8-CN2 layers on charge transport through graphene was studied by measuring the transfer characteristics of GFETs with different amounts of PDI8-CN2 grown on graphene channel.
- Typical evolution of resistance for clean graphene and  two different coverages is illustrated in Figure \ref{fig:3}, where we show transfer the results of measurements (symbols) obtained on GFETs comprising clean single-layer (brown curve), GFET with PDI8-CN2 coverage of 1 minute and PDI8-CN2 (blue curve) and with coverage of 3 minutes (green curve).
+ Typical evolution of transconductance current for clean graphene and two different coverages is illustrated in Figure \ref{fig:3}, where we show the results of measurements (symbols) obtained on GFETs comprising clean single-layer (brown curve), GFET with PDI8-CN2 deposition of 1 minute and PDI8-CN2 (blue curve) and with deposition of 3 minutes (green curve).
   Only a forward gate sweep (from $V_g<0$ to $V_g>0$) data are shown.
- A minimal hysteresis was observed (See Supplementary information) indicating low density of traps that would originate from the structural and/or chemical defects in the layers.
- Also shown are the results of fitting to a model function (black solid curves) explained below.
+ A minimal hysteresis was observed (See Supplementary information) indicating the density of traps is less than \textbf{XX cm$^{-2}$ - we can calculate this from the dirac shift due to hysteresis} that would originate from the structural and/or chemical defects in the layers.
+\TODO{Also shown are the results of fitting to a model function (black dashed curves) explained below}.
 
 
 \begin{figure}[htb]
@@ -197,14 +200,15 @@ The understanding of morphological properties of the OS layer and its growth mod
   \caption{Transconductance measurements of a graphene field-effect transistor at different PDI8-CN2 coverages of graphene.
  Brown curve corresponds to clean graphene, blue curve corresponds to a coverage of 0.7 obtained by the PDI8-CN2 deposition of 1 minute.
  The green curve corresponds to the coverage obtained by PDI8-CN2 deposition of 4 minutes.
- The corresponding morphologies are shown in Figures 1 and 2, respectively.
+ The corresponding morphologies are shown in Figures 1 and 2, respectively. 
+ \TODO{Dashed curves represent a model explained in the text}. 
  }
   \label{fig:3}
 \end{figure}
 
-We observe transfer characteristics of GFET comprising clean graphene exhibiting charge-neutrality point at back-gate voltage of 8 V.
-  The position of Charge Neutrality Point (CNP) relative to the Dirac point (0 V) is consistent with $p$-type doping of graphene caused by the trap states on SiO$_{2}$ surface and chemical redox reaction occurring at the graphene/SiO$_{2}$ interface\cite{feng-2014,peng-2017,lafkioti-2010}.
-  In addition to the shift of the conductivity minimum we observe also a strong reduction in the slope of the transfer curve occurring at about 1 V, leading to a plateau of the drain current.
+We observe transfer characteristics of GFET comprising clean graphene exhibiting charge-neutrality point (CNP) at back-gate voltage of 8 V.
+  The position of CNP relative to the Dirac point (0 V) is consistent with $p$-type doping of graphene caused by the trap states on SiO$_{2}$ surface and chemical redox reaction occurring at the graphene/SiO$_{2}$ interface\cite{feng-2014,peng-2017,lafkioti-2010}.
+  In addition to the shift of the CNP we observe also a strong reduction in the slope of the transfer curve occurring at about 1 V, leading to a plateau of the drain current.
 
   Such behavior is commonly present in GFETs with relatively short channels, where the role of the metallic contacts becomes important\cite{bartolomeo-2015,nouchi-2008,nouchi-2014}.
  Two principal mechanisms in GFET affect charge transport under ambient conditions.
@@ -230,7 +234,7 @@ where $v_F=0.
  A consequence of such variation of charge density within the structure are deviations from the linear transfer lineshapes, which in extreme cases may result in curves may extreme with double dips\cite{nouchi-2014,nam-2012}, or in less extreme exhibiting an abrupt change in slope continuing to a plateau.
  
 
-\subsection{Transconductance - 1st coverage}
+\subsection{Transconductance - submonolayer coverage}
 \label{sec:first}
 
 At the PDI8-CN2 coverage of 0.7 the position of CNP is shifted slightly (for $\sim$0.5 V)  to more positive voltages and the current at the CNP is slightly increased relative to the clean graphene.
@@ -265,53 +269,51 @@ These qualitative assertions were confirmed also numerically by modeling the res
 
 \subsection{Model}
 \label{sec:model}
-The resistance plots calculated from the data used to plot Figure \ref{fig:3}.
-  Are shown in modeled the transfer characteristics were modeled under the following assumptions.
- The gate voltage is a sum of contributions due to the quantum capacitance, given by the position of the Fermi level  ($E_F$) in graphene and the  electrostatic potential difference between the graphene layer and the gate contact, given by $n\cdot e/C_{ox}$ with $C_{ox}$ capacitance of the gate dielectric and $n$  charge carrier concentration\cite{sze-2006,chhikara-2014}.
-  However, the gate capacitance $C_{ox}=(\epsilon_0\epsilon)/d_{ox} =1.2\times10^{-12}$ F cm$^{-2}$, with dielectric constant of SiO$_{2}$  $\epsilon \approx 4$ and $d_{ox}=$285 nm.
-
-  Considering the typical charge carrier densities on the order of $10^{13}$ cm$^{-2}$ the potential difference accommodated by the bottom gate contact amounts ot 100 V, which is considerably larger than the Fermi level shift in graphene.
-  Quantum capacitance in the case of bottom gate contact may therefore be safely neglected\cite{das-2008}.
- The drain current was  calculated as:
-\begin{equation}
-  \label{eq:2}
-  I_{D}=\frac{W}{L}\mu n e(V_{D}- 2I_{D}R_{C})
-\end{equation}
+\TODO{The transconductance models, shown with a dashed line in Figure \ref{fig:4}},
+  were devised under the following assumptions.
+  The drain current was  calculated as:
+  \begin{equation}
+    \label{eq:2}
+    I_{D}=\frac{W}{L}\mu n e(V_{D}- 2I_{D}R_{C})
+  \end{equation}
+  \noindent With $W$ and $L$ channel width and length respectively, $R_{C}$ the resistance of both metallic contacts, $\mu$ charge carrier mobility and $n$ their concentration.
+   Given by:
+  \begin{equation}
+    \label{eq:3}
+    n=\sqrt{n_{o}^{2}+n^{2}(V_{g})}
+  \end{equation}
+ $n_o$ represents a carrier concentration induced by impurities\cite{adam-2007}.
+ While $n(V_{g})$ represents surface density of charge in graphene ($n$), which depends on the gate voltage and effective capacitance of the graphene/dielectric/bottom gate electrode. 
+ Effective capacitance can be modelled as a serial connection of the quantum capacitance, given by $C_{\mu} = e^2dn/dE_F$, which results from the Fermi energy ($E_F$) shift in graphene, 
+ and the electrostatic geometrical (displacement) capacitance between the graphene layer and the gate electrode, given by $C_{ox}=(\epsilon_0\epsilon)/d_{ox}$\cite{sze-2006,chhikara-2014,das-2008}.
+ $C_{\mu}$ is calculated from the dependence of the Fermi energy on the charge density and it was experimentally observed  to be larger than $C_{\mu} \geq 8 \times10^{-7}$ F cm$^{-2}$ \cite{xia_2009}.
+ However, $C_{ox}=1.2\times10^{-12}$ F cm$^{-2}$, with dielectric constant of SiO$_{2}$  $\epsilon \approx 4$ and $d_{ox}=$285 nm, which is considerably smaller than $C_{\mu}$.
+ Its contribution to the effective capacitance is insignificant.
+ Hence, the quantum capacitance in the case of bottom gate contact may therefore be safely neglected\cite{das-2008}. 
+ Therefore, the $V_{g}$-modulated carrier concentration in graphene is given by
+ \begin{equation}
+   \label{eq:4}
+   n(V_{g})= \frac{C_{ox}}{e}(V_{g}- V_{CNP})
+ \end{equation}
+ \noindent With $V_{CNP}$ the gate voltage of the charge-neutrality point\cite{xia-2010}.
+ The total resistance plots were calculated from the transconductance ($R=V_{G}/I_{DS}$) and are presented in Figure \ref{fig:4}.
+ The total resistance of the GFET is the resistance of the graphene channel plus the resistance of the contacts.
+ The relation of $R$ was obtained from (\ref{eq:2}-\ref{eq:4}):	
+ \begin{equation}
+	 \label{eq:5}
+     R_{tot} = \frac{V_{D}}{I_{D}} = \frac{L}{W\mu e\sqrt{n_{0}^{2}+n^{2}(V_{g})}} +2 R_{c}
+ \end{equation}
+ \noindent The results of the least-square fitting of (\ref{eq:5}) to measurements are shown by black solid lines in Figure \ref{fig:4}. The fitting parameters were $R_{c}$, $\mu$, $n_0$ and $n(V_{CNP})$.
+ Their corresponding values are summarised in Table \ref{tab:1}.
 
 \begin{figure}[htb]
   \centering
    \includegraphics[width=0.9\textwidth]{./Figures/fig4}  
-  \caption{Resistance calculated from the data presented in Figure 3 (symbols).
+  \caption{Resistance calculated from the data presented in Figure {\ref{fig:4}} (symbols).
  Solid lines represent least-squares fits based on the Equation \ref{eq:5}.
 }
   \label{fig:4}
 \end{figure}
-
-\noindent With $W$ and $L$ channel width and length respectively, $R_{C}$ the resistance of both metallic contacts, $\mu$ charge carrier mobility and n their concentration.
- Given by:
-\begin{equation}
-  \label{eq:3}
-  n_{s}=\sqrt{n_{o}^{2}+n^{2}(V_{g})}
-\end{equation}
-
-and 
-\begin{equation}
-  \label{eq:4}
-  n(V_{g})= \frac{C_{ox}}{e}(V_{D}- V_{CNP})
-\end{equation}
-
-
-\noindent With $V_{CNP}$ the gate voltage of the charge-neutrality point\cite{xia-2010}.
- Since the total resistance of the structure is the resistance of the channel plus the resistance of the contacts:
-\begin{equation}
-  \label{eq:5}
-  R_{tot} = \frac{V_{D}}{I_{D}} = \frac{L}{W\mu e\sqrt{n_{0}^{2}+n^{2}(V_{g})}} +2 R_{c}
-\end{equation}
-
-
-\noindent The results of the least-square fitting to a function presented in Equation 1 are shown by solid lines in Figure 4.
- The fitting parameters were the contact resistivity, mobility and $n_0$ and $n(V_g)$.
-  The results of fitting for the three cases are summarised in Table 1.
 
 \noindent \begin{table}[h]
   \centering
