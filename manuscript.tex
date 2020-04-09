@@ -80,7 +80,7 @@ Our results show that under the selected growth conditions PDI8-CN2 forms well o
 \section{\label{sec:exper}Experimental methods}
 
 
-Graphene was obtained by mechanical exfoliation of highly oriented pyrolytic graphite.
+Graphene was obtained by mechanical exfoliation of natural graphite.
  Subsequently graphene flakes were transferred onto $p$-doped silicon wafers covered with 285 nm-thick thermally grown oxide layer.
  Onto such surface PDI8-CN2 layers were fabricated by Organic Molecular Beam Epitaxy in a vacuum chamber with the base pressure of $1\times10^{-8}$ mbar.
  PDI8-CN2 powder without any further purification, was used as a source material.
@@ -141,13 +141,13 @@ The observed layer thickness in our case is consistent with PDI8-CN2 molecules l
  The rms roughness of our layers was consistently found to be 0.5 nm.
  As the exposure to the source materials increased from 1 minute to 3 minutes.
  The layer morphology changes as illustrated in Figure \ref{fig:2}.
- Figure \ref{fig:2}a is a  3$\times$3 $\mu$m topography map and shows two broad regions.
+ Figure \ref{fig:2}a is a  3$\times$3 $\mu$m$^{2}$ topography map and shows two broad regions.
  The brighter region on the left of the image diagonal corresponds to single-layer graphene, the region on the right is SiO$_{2}$ substrate.
  
 \begin{figure}[htb]
   \centering
    \includegraphics[width=0.9\textwidth]{./Figures/fig2}
-  \caption{a) $3\times3 \mu$m$^{2}$ non-contact topography map of a PDI8-CN2 layer on a single-layer graphene (leftmost region of the image) and on SiO$_{2}$ (rightmost region of the image).
+  \caption{a) $3\times3$ $\mu$m$^{2}$ non-contact topography map of a PDI8-CN2 layer on a single-layer graphene (leftmost region of the image) and on SiO$_{2}$ (rightmost region of the image).
  The growth time was 3 minutes.
  Brighter tones represent higher elevations.
  b) The height distribution of the image shown in Figure 2a) obtained from the height data of graphene region only.
@@ -262,7 +262,7 @@ The resistance ($R=V_{G}/I_{DS}$) plots calculated from the data used to plot Fi
 In the outset we note that the drain current was calculated as:
   \begin{equation}
     \label{eq:2}
-    I_{D}=\frac{W}{L}\mu n e(V_{D}- 2I_{D}R_{C})
+    I_{D}=\frac{W}{L}\mu n e(V_{D}- I_{D}R_{C})
   \end{equation}
   \noindent With $W$ and $L$ channel width and length respectively, $R_{C}$ the resistance of both metallic contacts, $\mu$ charge carrier mobility and $n$ their concentration.
    Given by:
@@ -274,7 +274,7 @@ In the outset we note that the drain current was calculated as:
  $n(V_{g})$ represents surface density of charge in graphene ($n$), which depends on the gate voltage and the graphene/bottom gate capacitance.
 The latter can be considered as sum of  the quantum capacitance -- dependent on the position of the  Fermi level ($E_F$)  in  graphene, 
  and the electrostatic  capacitance between the graphene layer and the gate electrode, given by $C_{ox}=(\epsilon_0\epsilon)/d_{ox}$\cite{sze-2006}.
- For the thickness of the SiO$_{2}$ $d_{ox}=$285 nm and its dielectric constant  $\epsilon \approx 4$,  $C_{ox}=1.2\times10^{-12}$ F cm$^{-2}$.
+ For the thickness of the SiO$_{2}$ $d_{ox}=$285 nm and its dielectric constant  $\epsilon \approx 3.9$,  $C_{ox}=1.2\times10^{-12}$ F cm$^{-2}$.
  The quantum capacitance has been shown to be on the order of $ \geq 8 \times10^{-7}$ F cm$^{-2}$ \cite{xia_2009}, and can therefore be ignored in our case\cite{das-2008}. 
  Therefore, the $V_{g}$-modulated carrier concentration in graphene is given by
  \begin{equation}
@@ -285,7 +285,7 @@ The latter can be considered as sum of  the quantum capacitance -- dependent on 
  The total resistance $R$ of the structure is the resistance of the  channel plus the resistance of the contacts and can be  obtained from (\ref{eq:2}-\ref{eq:4}):	
  \begin{equation}
 	 \label{eq:5}
-     R_{tot} = \frac{V_{D}}{I_{D}} = \frac{L}{W\mu e\sqrt{n_{0}^{2}+n^{2}(V_{g})}} +2 R_{C}
+     R_{tot} = \frac{V_{D}}{I_{D}} = \frac{L}{W\mu e\sqrt{n_{0}^{2}+n^{2}(V_{g})}} +R_{C}
  \end{equation}
  \noindent The results of the least-square fitting of (\ref{eq:5}) to measurements are shown by black solid lines in Figure \ref{fig:4}. The fitting parameters were $R_{C}$, $\mu$, $n_0$ and $n(V_{CNP})$.
  Their  values for the three cases considered are summarised in Table \ref{tab:1}.
@@ -305,13 +305,13 @@ The latter can be considered as sum of  the quantum capacitance -- dependent on 
    & $n_{0}$ (cm$^{-2}$ )& $R_{c}^{h}(\Omega$) & $R_{c}^{e}(\Omega)$ & $\mu_{h}$ (cm$^{2}$/Vs) & $\mu_{e}$ (cm$^{2}$/Vs) & $V_{D}(V) $  \\ \hline%
     Clean gr.
  & 3.
-33$\times 10^{11}$ & 3303 & 2469 & 26920 & 15772 & 8.0 \\
+33$\times 10^{11}$ & 3303 $\pm$ 4 & 2469 $\pm$ 4 & 27000 $\pm$ 4000 & 16000 $\pm$ 3000 & 8.0 \\
     70\% cov.
  &3.
-71$\times 10^{11}$ & 2694 & 2262 & 18537 & 14474 & 8.5 \\
+71$\times 10^{11}$ & 2695 $\pm$ 6 & 2262 $\pm$6 & 19000 $\pm$ 3000 & 14000 $\pm $2000 & 8.5 \\
      100\% cov.
  &7.
-42$\times 10^{11}$ & 2632 & 2548 & 3543 & 3471 & 1.0 \\ \hline
+42$\times 10^{11}$ & 2630 $\pm$ 10 & 2550 $\pm$10 & 3500 $\pm$ 600 & 3400 $\pm$ 600 & 1.0 \\ \hline
     
   \end{tabular}
   \caption{The results of fitting of resistance crves shown in Figure \ref{fig:3}.
@@ -352,8 +352,8 @@ Coupled to the change in the position of CNP is also an increase in the overall 
  This is because for the OS layers the metallic contacts are of the  bottom-contact type, and charge transport occurs in parallel through graphene and the second layer of PDI8-CN8, in which $\pi$-stacking provides more favorable charge transporting lane than the flat-lying molecules.
  Overall resistance is therefore net resistance between graphene and PDI8-CN2.
  Interestingly the asymmetry in contact resistance for holes (R$_{h}$) and  electrons  (R$_{e}$) on clean graphene as obtained from the model is quite appreciable and reflects the qualitative arguments given above.
-  On fully covered graphene, when the charge transport proceeds also over PDI8-CN2 layer for which the contacts are of the bottom-type this asymmetry almost vanishes (R$_{e}$=2632 $\Omega$, vs. R$_{h}=2548\ \Omega$).
-  Coupled to the doping structure of the channel discussed above is also asymmetry in hole mobility  ($\mu_{h}= 26920$ cm$^{2}$/Vs ) and electron mobility ($\mu_{h}= 15772$ cm$^{2}$/Vs) on clean graphene.
+  On fully covered graphene, when the charge transport proceeds also over PDI8-CN2 layer for which the contacts are of the bottom-type this asymmetry almost vanishes (R$_{e}$=2630 $\pm$ 10 $\Omega$, vs. R$_{h}$=2550 $\pm$ 10 $\Omega$).
+  Coupled to the doping structure of the channel discussed above is also asymmetry in hole mobility  ($\mu_{h}$= 27000 $\pm$ 4000 cm$^{2}$/Vs ) and electron mobility ($\mu_{h}$= 16000 $\pm$ 3000 cm$^{2}$/Vs) on clean graphene.
  As the PDI8-CN2 layer is completed the mobility is drastically reduced relative to the clean graphene.
   This argues for the opening of the charge transport venue through the second layer of $\pi-\pi$ molecular array.
  Transport is ambipolar and characterized by charge carrier mobility values that are unprecedented for an OS-graphene system.
